@@ -38,8 +38,8 @@ timestamp.field=last_login
 topic=person-chg
 error.path=/data/connect/error
 input.path=/data/connect/input
-key.schema={"name":"com.trivadis.UserKey","type":"STRUCT","isOptional":false,"fieldSchemas":{"id":{"type":"INT64","isOptional":false}}}
-value.schema={"name":"com.trivadis.User","type":"STRUCT","isOptional":false,"fieldSchemas":{"id":{"type":"INT64","isOptional":false},"first_name":{"type":"STRING","isOptional":true},"last_name":{"type":"STRING","isOptional":true},"email":{"type":"STRING","isOptional":true},"gender":{"type":"STRING","isOptional":true},"ip_address":{"type":"STRING","isOptional":true},"last_login":{"name":"org.apache.kafka.connect.data.Timestamp","type":"INT64","version":1,"isOptional":false},"account_balance":{"name":"org.apache.kafka.connect.data.Decimal","type":"BYTES","version":1,"parameters":{"scale":"2"},"isOptional":true},"country":{"type":"STRING","isOptional":true},"favorite_color":{"type":"STRING","isOptional":true}}}
+key.schema={"name":"com.trivadis.PersonKey","type":"STRUCT","isOptional":false,"fieldSchemas":{"id":{"type":"INT64","isOptional":false}}}
+value.schema={"name":"com.trivadis.Person","type":"STRUCT","isOptional":false,"fieldSchemas":{"id":{"type":"INT64","isOptional":false},"first_name":{"type":"STRING","isOptional":true},"last_name":{"type":"STRING","isOptional":true},"email":{"type":"STRING","isOptional":true},"gender":{"type":"STRING","isOptional":true},"created_at":{"name":"org.apache.kafka.connect.data.Timestamp","type":"INT64","version":1,"isOptional":false},"account_balance":{"name":"org.apache.kafka.connect.data.Decimal","type":"BYTES","version":1,"parameters":{"scale":"2"},"isOptional":true},"country":{"type":"STRING","isOptional":true},"favorite_color":{"type":"STRING","isOptional":true}}}
 
 ```
 
